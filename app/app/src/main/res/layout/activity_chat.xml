@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background">
+
+    <Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        android:navigationIcon="@drawable/ic_back">
+        <TextView
+            android:id="@+id/chat_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="发送者"/>
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_below="@+id/chat_toolbar"
+        android:layout_above="@+id/chat_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/chat_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_shape_background"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/chat_editView"
+            android:layout_centerInParent="true"
+            android:background="@drawable/style_edit_view"
+            android:layout_toStartOf="@+id/chat_send"
+            android:minLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/chat_send"
+            android:layout_marginStart="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

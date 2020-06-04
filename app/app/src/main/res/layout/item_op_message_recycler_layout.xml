@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_op_message_recycler_layout"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:padding="10dp"
+    android:background="@drawable/style_shape_background">
+
+
+    <TextView
+        android:id="@+id/item_nickname"
+        android:text="操作员0000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:minWidth="40dp"
+        android:textColor="#1296db"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/item_sender"
+        android:text="发送者"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_preView"
+                android:text="内容"
+                android:singleLine="true"
+                android:textColor="#515151"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/item_time"
+                android:text="时间"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_new"
+            android:text="New"
+            android:paddingEnd="10dp"
+            android:layout_gravity="center"
+            android:textColor="#EE0808"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="center|end"
+            android:src="@drawable/ic_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

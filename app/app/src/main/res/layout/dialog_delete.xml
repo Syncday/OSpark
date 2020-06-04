@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/style_shape_background"
+    android:layout_width="100dp"
+    android:layout_height="80dp">
+
+    <TextView
+        android:text="删除\n与此用户的所有信息"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_delete_message"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="取消"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:id="@+id/dialog_button_cancel"
+            android:layout_margin="5dp"
+            android:layout_alignRight="@+id/dialog_button_strut"
+            android:background="@drawable/style_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/dialog_button_strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:text="删除"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/style_delete_btn"
+            android:layout_alignLeft="@+id/dialog_button_strut"
+            android:id="@+id/dialog_button_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

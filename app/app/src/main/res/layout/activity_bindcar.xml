@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#80383838"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/bind_car_layout"
+        android:background="@drawable/style_shape_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="绑定车辆"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrice"
+            android:text="同一个手机号只能绑定一个车辆\n当车辆正在服务时，无法更改绑定"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/bind_car_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="18sp"
+            android:background="@drawable/style_edit_view"
+            android:text="添加车牌号码" />
+
+
+        <Button
+            android:id="@+id/bind_car_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/style_login_btn"
+            android:text="绑定"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/bind_car_custom_keyboard_container"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bind_car_layout"
+        android:background="@color/colorWhite">
+
+        <com.pxy.LicensePlateView
+            android:layout_marginTop="10dp"
+            android:id="@+id/bind_car_keyboard"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textColor="@color/colorSkyBlue"
+            android:text="点击进行修改"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

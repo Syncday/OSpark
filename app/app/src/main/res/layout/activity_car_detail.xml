@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#80383838"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/style_shape_background"
+        android:orientation="vertical">
+
+        <com.amap.api.maps.MapView
+
+            android:layout_weight="1"
+            android:id="@+id/recycler_detail_map"
+            android:background="@drawable/style_shape_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/style_shape_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:text="车牌: "
+                    android:textColor="#1982D3"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/recycler_detail_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:textColor="#515151"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#99807D7D" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:text="时间: "
+                    android:textColor="#1982D3"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/recycler_detail_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:textColor="#515151"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#99807D7D" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:text="位置: "
+                    android:textColor="#1982D3"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/recycler_detail_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:textColor="#515151"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

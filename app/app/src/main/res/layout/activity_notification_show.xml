@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80383838"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="36dp"
+        android:background="@drawable/style_shape_background">
+
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="服务提醒:"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/notification_info_tips"
+            android:textColor="#505050"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="信息"
+            android:layout_toEndOf="@id/notification_info_tips"
+            android:layout_alignTop="@id/notification_info_tips"
+            android:gravity="center"
+            android:id="@+id/notification_info"
+            android:textColor="#505050"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/notification_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/notification_info"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/style_shape_background" />
+
+        <Button
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="确定"
+            android:textStyle="bold"
+            android:layout_above="@+id/notification_message"
+            android:id="@+id/notification_confirm"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/style_delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:text="发信息"
+            android:padding="14dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/notification_message"
+            android:textColor="#DB4646"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

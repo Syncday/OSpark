@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/chat_content_left_layout"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:background="@drawable/style_chat_receiver_background"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chat_content_left"
+                android:textSize="16sp"
+                android:text="接收者信息"
+                android:textColor="#515151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="00:00"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:id="@+id/chat_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/chat_content_right_layout"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:background="@drawable/style_chat_sender_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chat_content_right"
+                android:text="发送者信息"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:maxWidth="280dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:text="00:00"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="start"
+            android:id="@+id/chat_time_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

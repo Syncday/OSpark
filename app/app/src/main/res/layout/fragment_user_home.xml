@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:id="@+id/user_home_price_layout"
+        android:background="@drawable/style_shape_background"
+        android:layout_alignParentTop="true"
+        android:padding="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:text="￥"
+            android:textSize="30sp"
+            android:textColor="#F8AE51"
+            android:id="@+id/user_home_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="正在服务中"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="位置"
+            android:id="@+id/user_home_address"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="时间"
+            android:id="@+id/user_home_time"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/user_home_price_layout"
+        android:orientation="vertical"
+        android:background="@drawable/style_shape_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="收费标准"
+            android:padding="5dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/user_home_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="终止服务"
+            android:visibility="gone"
+            android:id="@+id/user_home_stop_service"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/style_stop_service_btn"
+            android:textColor="@color/colorWhite"
+            android:layout_alignEnd="@+id/user_home_strut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/user_home_strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:text="发送信息"
+            android:visibility="gone"
+            android:id="@+id/user_home_send_message"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/style_send_message_btn"
+            android:layout_alignStart="@+id/user_home_strut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
