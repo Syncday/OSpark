@@ -24,12 +24,12 @@
 
 ### 预览
 
-![登录]( https://github.com/Syncday/online_service/blob/master/preView/login.jpg )
+![登录]( https://github.com/Syncday/OSpark/blob/master/onlien_service/preView/login.jpg )
 
-![主页](https://github.com/Syncday/online_service/blob/master/preView/home.png)
+![主页](https://github.com/Syncday/OSpark/blob/master/onlien_service/preView/home.png)
 
-![账号](https://github.com/Syncday/online_service/blob/master/preView/accounts.png)
+![账号](https://github.com/Syncday/OSpark/blob/master/onlien_service/preView/accounts.png)
 
-![账单](https://github.com/Syncday/online_service/blob/master/preView/bills.png)
+![账单](https://github.com/Syncday/OSpark/blob/master/onlien_service/preView/bills.png)
 
-![收费](https://github.com/Syncday/online_service/blob/master/preView/charges.png)
+![收费](https://github.com/Syncday/OSpark/blob/master/onlien_service/preView/charges.png)
