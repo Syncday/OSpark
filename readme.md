@@ -17,9 +17,9 @@
 - 支付宝支付SDK：实现在线支付功能
 - Volley框架：Android与服务端的通讯框架是Volley，而且自带网络图片展示控件。
 - JSON：Android端和服务端通过JSON格式进行数据交换
-- Java_websocket框架：Android端的的技术通讯基于该框架进行开发，实现心跳连接
+- Java_websocket框架：Android端的的聊天、通知基于该框架进行开发，实现心跳连接
 - Codeigniter框架：后端使用Codeigniter 3.X版本进行开发，实现前端各种接口
-- GatewayWorker框架：即时通讯服务端基于该控件进行开发
+- GatewayWorker框架：即时通讯服务端基于该框架进行开发
 
 ### 预览：
 
